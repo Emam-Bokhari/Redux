@@ -20,13 +20,13 @@ export default function Counter() {
         <p className="text-center pt-7 font-bold text-lg">{count}</p>
         <div className="text-center">
           <button
-            onClick={() => incrementHandler(1)}
+            onClick={() => incrementHandler(5)}
             className="bg-blue-400 px-3 py-2 rounded-md text-white text-lg hover:bg-blue-500 transition-all"
           >
             Increment
           </button>
           <button
-            onClick={() => decrementHandler(1)}
+            onClick={() => decrementHandler(3)}
             className="bg-red-400 px-3 py-2 rounded-md text-white text-lg ml-3 hover:bg-red-500 transition-all"
           >
             Decrement
