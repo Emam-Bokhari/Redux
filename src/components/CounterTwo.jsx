@@ -1,9 +1,9 @@
 import { Fragment } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { increment, decrement } from "../redux/counter/actionsCreators";
+import { increment, decrement } from "../redux/counterTwo/actionsCreators";
 
-export default function Counter() {
-  const count = useSelector((state) => state.counter.value);
+export default function CounterTwo() {
+  const count = useSelector((state) => state.counterTwo.value);
   const dispatch = useDispatch();
 
   const incrementHandler = (value) => {
@@ -20,13 +20,13 @@ export default function Counter() {
         <p className="text-center pt-7 font-bold text-lg">{count}</p>
         <div className="text-center">
           <button
-            onClick={() => incrementHandler(5)}
+            onClick={() => incrementHandler(1)}
             className="bg-blue-400 px-3 py-2 rounded-md text-white text-lg hover:bg-blue-500 transition-all"
           >
             Increment
           </button>
           <button
-            onClick={() => decrementHandler(3)}
+            onClick={() => decrementHandler(1)}
             className="bg-red-400 px-3 py-2 rounded-md text-white text-lg ml-3 hover:bg-red-500 transition-all"
           >
             Decrement

@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import Counter from "./components/Counter";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import CounterTwo from "./components/CounterTwo";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
           Simple Counter Application
         </h2>
         <Counter />
+        <CounterTwo />
       </Provider>
     </Fragment>
   );
