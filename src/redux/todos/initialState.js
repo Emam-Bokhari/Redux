@@ -10,4 +10,16 @@ export const initialState = [
     completed:false,
     color:"green"
   },
+  {
+    id:3,
+    text:"Learn Next Js",
+    completed:true,
+    color:"red"
+  },
+  {
+    id:4,
+    text:"Learn MUI",
+    completed:true,
+    color:"yellow"
+  },
 ];

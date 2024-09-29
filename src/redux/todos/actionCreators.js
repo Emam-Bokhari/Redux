@@ -17,16 +17,14 @@ export const added = (todos) => {
 export const deleted = (todoId) => {
   return {
     type: DELETED,
-    payload: { todoId },
+    payload: todoId,
   };
 };
 
 export const toggled = (todoId) => {
   return {
     type: TOGGLED,
-    payload: {
-      todoId,
-    },
+    payload: todoId,
   };
 };
 
