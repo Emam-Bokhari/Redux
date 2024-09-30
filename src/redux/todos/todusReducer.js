@@ -15,6 +15,9 @@ const todosReducer = (state = initialState, action) => {
         ...state,
         {
           id: crypto.randomUUID(),
+          text: action.payload,
+          completed: false,
+          color: "red",
         },
       ];
     case TOGGLED:

@@ -7,10 +7,10 @@ import {
   TOGGLED,
 } from "./actionTypes";
 
-export const added = (todos) => {
+export const added = (text) => {
   return {
     type: ADDED,
-    payload: todos,
+    payload: text,
   };
 };
 

@@ -6,7 +6,7 @@ const filtersReducer = (state = initialState, action) => {
     case STATUS:
       return {
         ...state,
-        status: action.payload,
+        status: action.payload.status,
       };
     case CHANGECOLOR: {
       const { color, changeType } = action.payload;
